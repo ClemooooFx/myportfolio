@@ -86,6 +86,21 @@ footer{padding:28px 0;color:var(--muted);font-size:.82rem;display:flex;justify-c
 footer a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:900px){.tool-grid,.steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.about{grid-template-columns:1fr;gap:20px}.tool-grid,.steps{grid-template-columns:1fr}.closing-actions{margin-top:18px}}
+
+/* Logo carousel */
+.logo-strip{border-top:1px solid var(--line);padding:30px 0 34px;overflow:hidden}
+.logo-label{margin:0 0 20px;text-align:center;font-size:.72rem;text-transform:uppercase;letter-spacing:.16em;font-weight:850;color:var(--muted)}
+.logo-marquee{-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.logo-track{display:flex;width:max-content;animation:logo-scroll 45s linear infinite}
+.logo-marquee:hover .logo-track{animation-play-state:paused}
+.logo-group{display:flex;align-items:center;gap:56px;padding:0 28px;margin:0;list-style:none;flex-shrink:0}
+.logo{display:block;height:34px;width:auto;max-width:none;opacity:.85;transition:opacity .2s,transform .2s}
+.logo:hover{opacity:1;transform:scale(1.08)}
+.logo.snap{filter:drop-shadow(0 0 1px rgba(0,0,0,.45))}
+@keyframes logo-scroll{to{transform:translateX(-50%)}}
+@media(prefers-color-scheme:dark){.logo.mono{filter:invert(1)}}
+@media(max-width:760px){.logo{height:28px}.logo-group{gap:40px;padding:0 20px}}
+@media(prefers-reduced-motion:reduce){.logo-track{animation:none}.logo-marquee{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.logo-group[aria-hidden="true"]{display:none}}
 </style>
 </head>
 <body>
@@ -101,6 +116,11 @@ footer a{text-decoration:underline;text-underline-offset:3px}
 <h1>Good work starts with a problem worth <em>solving.</em></h1>
 <p class="lead">I help organisations make their marketing more measurable, their data more useful and their digital operations easier to manage. The work is not just about what gets done — it is about removing friction and creating a better experience at the other end.</p>
 <div class="hero-bottom"><a class="btn dark" href="#problems">Explore what I solve ↓</a><span class="hero-note">A simple view of the problems, the approach and the impact.</span></div>
+</div>
+
+<div class="logo-strip" aria-label="Platforms and tools I work with">
+<p class="logo-label">Platforms &amp; tools I work with</p>
+<div class="logo-marquee"><div class="logo-track"><ul class="logo-group"><li><img class="logo" src="google-ads.png" alt="Google Ads" title="Google Ads" height="34" loading="lazy"></li><li><img class="logo" src="meta.png" alt="Meta" title="Meta" height="34" loading="lazy"></li><li><img class="logo" src="linkedin.png" alt="LinkedIn" title="LinkedIn" height="34" loading="lazy"></li><li><img class="logo" src="google-analytics-ga4.png" alt="Google Analytics 4" title="Google Analytics 4" height="34" loading="lazy"></li><li><img class="logo" src="google-tag-manager.png" alt="Google Tag Manager" title="Google Tag Manager" height="34" loading="lazy"></li><li><img class="logo" src="apollo-io.png" alt="Apollo.io" title="Apollo.io" height="34" loading="lazy"></li><li><img class="logo" src="mailjet.png" alt="Mailjet" title="Mailjet" height="34" loading="lazy"></li><li><img class="logo" src="zoho.png" alt="Zoho" title="Zoho" height="34" loading="lazy"></li><li><img class="logo" src="odoo.png" alt="Odoo" title="Odoo" height="34" loading="lazy"></li><li><img class="logo" src="facebook.png" alt="Facebook" title="Facebook" height="34" loading="lazy"></li><li><img class="logo" src="instagram.png" alt="Instagram" title="Instagram" height="34" loading="lazy"></li><li><img class="logo mono" src="x.png" alt="X" title="X" height="34" loading="lazy"></li><li><img class="logo" src="youtube.png" alt="YouTube" title="YouTube" height="34" loading="lazy"></li><li><img class="logo mono" src="tiktok.png" alt="TikTok" title="TikTok" height="34" loading="lazy"></li><li><img class="logo" src="whatsapp.png" alt="WhatsApp" title="WhatsApp" height="34" loading="lazy"></li><li><img class="logo" src="pinterest.png" alt="Pinterest" title="Pinterest" height="34" loading="lazy"></li><li><img class="logo snap" src="snapchat.png" alt="Snapchat" title="Snapchat" height="34" loading="lazy"></li><li><img class="logo" src="telegram.png" alt="Telegram" title="Telegram" height="34" loading="lazy"></li><li><img class="logo" src="reddit.png" alt="Reddit" title="Reddit" height="34" loading="lazy"></li><li><img class="logo mono" src="threads.png" alt="Threads" title="Threads" height="34" loading="lazy"></li></ul><ul class="logo-group" aria-hidden="true"><li><img class="logo" src="google-ads.png" alt="" title="Google Ads" height="34" loading="lazy"></li><li><img class="logo" src="meta.png" alt="" title="Meta" height="34" loading="lazy"></li><li><img class="logo" src="linkedin.png" alt="" title="LinkedIn" height="34" loading="lazy"></li><li><img class="logo" src="google-analytics-ga4.png" alt="" title="Google Analytics 4" height="34" loading="lazy"></li><li><img class="logo" src="google-tag-manager.png" alt="" title="Google Tag Manager" height="34" loading="lazy"></li><li><img class="logo" src="apollo-io.png" alt="" title="Apollo.io" height="34" loading="lazy"></li><li><img class="logo" src="mailjet.png" alt="" title="Mailjet" height="34" loading="lazy"></li><li><img class="logo" src="zoho.png" alt="" title="Zoho" height="34" loading="lazy"></li><li><img class="logo" src="odoo.png" alt="" title="Odoo" height="34" loading="lazy"></li><li><img class="logo" src="facebook.png" alt="" title="Facebook" height="34" loading="lazy"></li><li><img class="logo" src="instagram.png" alt="" title="Instagram" height="34" loading="lazy"></li><li><img class="logo mono" src="x.png" alt="" title="X" height="34" loading="lazy"></li><li><img class="logo" src="youtube.png" alt="" title="YouTube" height="34" loading="lazy"></li><li><img class="logo mono" src="tiktok.png" alt="" title="TikTok" height="34" loading="lazy"></li><li><img class="logo" src="whatsapp.png" alt="" title="WhatsApp" height="34" loading="lazy"></li><li><img class="logo" src="pinterest.png" alt="" title="Pinterest" height="34" loading="lazy"></li><li><img class="logo snap" src="snapchat.png" alt="" title="Snapchat" height="34" loading="lazy"></li><li><img class="logo" src="telegram.png" alt="" title="Telegram" height="34" loading="lazy"></li><li><img class="logo" src="reddit.png" alt="" title="Reddit" height="34" loading="lazy"></li><li><img class="logo mono" src="threads.png" alt="" title="Threads" height="34" loading="lazy"></li></ul></div></div>
 </div>
 
 <section id="about">
